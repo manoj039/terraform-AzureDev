@@ -2,17 +2,17 @@ buckets_iam = [
   {
       ## BUCKET WITH ALL THE INPUT ATTRIBUTES
       ## AS SPECIIFIED IN THE TERRAFORM GOOGLE MODULES DOCS
-    bucket_name   = "europe-nextflow-dummy-gsb-standard-001"
+    bucket_name   = "europe-nextflow-dummy1-gsb-standard-001"
     project       = "ace-ripsaw-311918"
     create_bucket = true
-    location      = "EU"
+    location      = "US"
     prefix        = ""
 
     /*encryption_key_names = {
       gsk-prod-bucket-01 = "projects/cvs-edp-ext-prj-7331/locations/us/keyRings/suhail-demo-key-ring/cryptoKeys/suhail-demo-key"
     }*/
     versioning = {
-      europe-nextflow-dummy-gsb-standard-001 = true
+      europe-nextflow-dummy1-gsb-standard-001 = true
     }
     bucket_permissions = {
       "roles/storage.admin" = [
@@ -64,7 +64,7 @@ description   = "To run copy to GCS script on HPC server" #"Service Account for 
 
 /** Artifact Registry **/
 region               = "us-east1"
-repository_id        = "my-repository"
+repository_id        = "my-repository-1"
 format               = "DOCKER"
 repo_description     = "Docker image repo"
 
