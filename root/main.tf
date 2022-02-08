@@ -53,7 +53,7 @@ module "artifact_registry" {
 	Kubernetes Engine
  *****************************************/
 
- module "kubernetes-engine" {
+ /**module "kubernetes-engine" {
   source             = "../modules/kubernetes-engine"
   project_id         = var.project_id
   region             = var.region
@@ -68,4 +68,4 @@ module "artifact_registry" {
   
   gke_service_account = module.service_account.gke_sa_email
   devops_project_id   = var.devops_project_id
- }
+ } **/
